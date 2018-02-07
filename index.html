@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rubik:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  </head>
+  <body>
+    <div id="picker">
+      <h1>Table Finder</h1>
+      <p>Pick your table now</p>
+      <div id="floor">
+        <div class="row">
+          <div class="table available" id="table1">1</div>
+          <div class="table available" id="table2">2</div>
+          <div class="table available" id="table3">3</div>
+        </div>
+        <div class="row">
+          <div class="table available" id="table4">4</div>
+          <div class="table available" id="table5">5</div>
+          <div class="table available" id="table6">6</div>
+        </div>
+        <div class="row">
+          <div class="table available" id="table7">7</div>
+          <div class="table available" id="table8">8</div>
+          <div class="table available" id="table9">9</div>
+        </div>
+      </div>
+      <div id="form">
+        <form>
+          <i id="x" class="material-icons">clear</i>
+          <h2>New Reservation</h2>
+          <p>Table Number: <span></span></p>
+          <input id="name" type="text" placeholder="Name" required/>
+          <input type="tel" placeholder="Phone number"/>
+          <input id="party" type="number" placeholder="Size of party" required/>
+          <button id="button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+body {
+  background-color: #E1D7D4;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #E34E45;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h1 + p {
+  margin: 0 auto 30px;
+}
+
+#picker {
+  text-align: center;
+  box-sizing: border-box;
+  width: 440px;
+  height: 620px;
+  margin: 0 auto;
+}
+
+#floor {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+
+.table {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px;
+  color: black;
+}
+
+.table.available:hover {
+  background-color: pink;
+  cursor: crosshair;
+}
+
+.reserved {
+  background-color: #ADAAAA;
+  color: #eee;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+.resInfo {
+  position: absolute;
+  box-sizing: border-box;
+  top: 70px;
+  left: -20px;
+  width: 140px;
+  margin: 0 auto;
+  background-color: #ADAAAA;
+  font-size: 10px;
+  z-index: 2;
+  text-align: left;
+  padding: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  line-height: 12px;
+  display: none;
+  word-wrap: break-word;
+}
+
+.reserved:hover .resInfo {
+  display: block;
+}
+
+
+#form {
+  position: relative;
+  top: -360px;
+  background-color: white;
+  left: -10px;
+  width: 460px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  z-index: 3;
+  display: none;
+}
+
+form > * {
+  display: block;
+  padding: 15px;
+}
+
+i {
+  display: block;
+  float: right;
+  color: #ccc;
+  cursor: pointer;
+}
+
+i + h2 {
+  clear: both;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 5px;
+}
+
+h2 + p {
+  margin-top: 0;
+}
+
+input {
+  margin: 10px auto;
+  width: 95%;
+  box-sizing: border-box;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid grey;
+}
+
+button {
+  background-color: #008000;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 25px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:480px) {
+  body {
+    width: 85%;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+
+  #picker {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #form {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    bottom: 300px;
+    margin: 0 auto;
+    align: center;
+  }
+
+  .table {
+    height: 75px;
+    width: 75px;
+    line-height: 75px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .resInfo {
+    left: -32.5px;
+    top: 25px;
+  }
+}
